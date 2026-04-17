@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* Configuração de Variáveis de Design */
+@theme {
+  --color-primary: #2563eb;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+  --color-bg-app: #f8fafc;
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    background-color: var(--color-bg-app);
+    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+}
+
+/* Custom Components */
+@layer components {
+  .dropzone-active {
+    @apply border-blue-500 bg-blue-50 ring-4 ring-blue-100;
+  }
+}
